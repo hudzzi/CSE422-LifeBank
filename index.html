@@ -1,779 +1,722 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Charifit</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JobEntry - Job Portal Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div class="header-top_area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-6 col-md-12 col-lg-8">
-                            <div class="short_contact_list">
-                                <ul>
-                                    <li><a href="#"> <i class="fa fa-phone"></i> +1 (454) 556-5656</a></li>
-                                    <li><a href="#"> <i class="fa fa-envelope"></i>Yourmail@gmail.com</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6 col-lg-4">
-                            <div class="social_media_links d-none d-lg-block">
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-pinterest-p"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-xl-3 col-lg-3">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9">
-                            <div class="main-menu">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a href="index.html">home</a></li>
-                                        <li><a href="About.html">About</a></li>
-                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">elements</a></li>
-                                                <li><a href="Cause.html">Cause</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                                <div class="Appointment">
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a data-scroll-nav='1' href="#">Make a Donate</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
         </div>
-    </header>
-    <!-- header-end -->
+        <!-- Spinner End -->
 
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="single_slider  d-flex align-items-center slider_bg_1 overlay2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="slider_text ">
-                            <span>Get Started Today.</span>
-                            <h3> Help the children
-                                When They Need</h3>
-                            <p>With so much to consume and such little time, coming up <br>
-                                with relevant title ideas is essential</p>
-                            <a href="About.html" class="boxed-btn3">Learn More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider_area_end -->
 
-    <!-- reson_area_start  -->
-    <div class="reson_area section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-55">
-                        <h3><span>Reason of Helping</span></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_reson">
-                        <div class="thum">
-                            <div class="thum_1">
-                                <img src="img/help/1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="help_content">
-                            <h4>Collecting Fund</h4>
-                            <p>Lorem ipsum, or lipsum as it is 
-                                sometimes known, is dummy 
-                                text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_reson">
-                        <div class="thum">
-                            <div class="thum_1">
-                                <img src="img/help/2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="help_content">
-                            <h4>Blood Camp</h4>
-                            <p>Lorem ipsum, or lipsum as it is 
-                                sometimes known, is dummy 
-                                text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_reson">
-                        <div class="thum">
-                            <div class="thum_1">
-                                <img src="img/help/3.png" alt="">
-                            </div>
-                        </div>
-                        <div class="help_content">
-                            <h4>Friendly Volunteer</h4>
-                            <p>Lorem ipsum, or lipsum as it is 
-                                sometimes known, is dummy 
-                                text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- reson_area_end  -->
-
-    <!-- latest_activites_area_start  -->
-    <div class="latest_activites_area">
-        <div class=" video_bg_1 video_activite  d-flex align-items-center justify-content-center">
-            <a class="popup-video" href="https://www.youtube.com/watch?v=MG3jGHnBVQs">
-                <i class="flaticon-ui"></i>
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary">JobEntry</h1>
             </a>
-        </div>
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-lg-7">
-                    <div class="activites_info">
-                        <div class="section_title">
-                            <h3> <span>Watch Our Latest  </span><br>
-                                Activities</h3>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="about.html" class="nav-item nav-link">Cars</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Log In</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="loginS.php" class="dropdown-item">As A Customer</a>
+                            <a href="admin.php" class="dropdown-item">As An Admin</a>
                         </div>
-                        <p class="para_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do 
-                            eiusmod tempor incididunt  ut labore dolore magna aliqua. 
-                            enim minim veniam, quis nostrud exercitation.</p class="para_1">
-                        <p class="para_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do 
-                            eiusmod tempor incididunt  ut labore dolore magna aliqua. 
-                            enim minim veniam, quis nostrud exercitation. tempor 
-                            incididunt  ut labore dolore magna aliqua. enim minim 
-                            veniam, quis nostrud exercitation.</p>
-                        <a href="#" data-scroll-nav='1' class="boxed-btn4">Donate Now</a>
                     </div>
                 </div>
+                <a href="admin.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Add A Car<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
-        </div>
-    </div>
-    <!-- latest_activites_area_end  -->
+        </nav>
+        <!-- Navbar End -->
 
-    <!-- popular_causes_area_start  -->
-    <div class="popular_causes_area section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-55">
-                        <h3><span>Popular Causes</span></h3>
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .5);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">Find The Perfect Job That You Deserved</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                    <a href="loginS.php" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search A Job</a>
+                                    <a href="loginR.php" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Find A Talent</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="causes_active owl-carousel">
-                        <div class="single_cause">
-                            <div class="thumb">
-                                <img src="img/causes/1.png" alt="">
-                            </div>
-                            <div class="causes_content">
-                                <div class="custom_progress_bar">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progres_count">
-                                                30%
-                                            </span>
-                                        </div>
-                                      </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .5);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">Find The Best Startup Job That Fit You</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                    <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search A Job</a>
+                                    <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Find A Talent</a>
                                 </div>
-                                <div class="balance d-flex justify-content-between align-items-center">
-                                    <span>Raised: $5000.00 </span>
-                                    <span>Goal: $9000.00 </span>
-                                </div>
-                                <h4>Help us to Send Food</h4>
-                                <p>The passage is attributed to an 
-                                    unknown typesetter in the century 
-                                    who is thought</p>
-                                <a class="read_more" href="cause_details.html">Read More</a>
-                            </div>
-                        </div>
-                        <div class="single_cause">
-                            <div class="thumb">
-                                <img src="img/causes/2.png" alt="">
-                            </div>
-                            <div class="causes_content">
-                                <div class="custom_progress_bar">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progres_count">
-                                                30%
-                                            </span>
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="balance d-flex justify-content-between align-items-center">
-                                    <span>Raised: $5000.00 </span>
-                                    <span>Goal: $9000.00 </span>
-                                </div>
-                                <h4>Clothes For Everyone</h4>
-                                <p>The passage is attributed to an 
-                                    unknown typesetter in the century 
-                                    who is thought</p>
-                                <a class="read_more" href="cause_details.html">Read More</a>
-                            </div>
-                        </div>
-                        <div class="single_cause">
-                            <div class="thumb">
-                                <img src="img/causes/3.png" alt="">
-                            </div>
-                            <div class="causes_content">
-                                <div class="custom_progress_bar">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progres_count">
-                                                30%
-                                            </span>
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="balance d-flex justify-content-between align-items-center">
-                                    <span>Raised: $5000.00 </span>
-                                    <span>Goal: $9000.00 </span>
-                                </div>
-                                <h4>Water For All Children</h4>
-                                <p>The passage is attributed to an 
-                                    unknown typesetter in the century 
-                                    who is thought</p>
-                                <a class="read_more" href="cause_details.html">Read More</a>
-                            </div>
-                        </div>
-                        <div class="single_cause">
-                            <div class="thumb">
-                                <img src="img/causes/1.png" alt="">
-                            </div>
-                            <div class="causes_content">
-                                <div class="custom_progress_bar">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progres_count">
-                                                30%
-                                            </span>
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="balance d-flex justify-content-between align-items-center">
-                                    <span>Raised: $5000.00 </span>
-                                    <span>Goal: $9000.00 </span>
-                                </div>
-                                <h4>Help us to Send Food</h4>
-                                <p>The passage is attributed to an 
-                                    unknown typesetter in the century 
-                                    who is thought</p>
-                                <a class="read_more" href="cause_details.html">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- popular_causes_area_end  -->
+        <!-- Carousel End -->
 
-    <!-- counter_area_start  -->
-    <div class="counter_area">
-        <div class="container">
-            <div class="counter_bg overlay">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single_counter d-flex align-items-center justify-content-center">
-                            <div class="icon">
-                                <i class="flaticon-calendar"></i>
-                            </div>
-                            <div class="events">
-                                <h3 class="counter">120</h3>
-                                <p>Finished Event</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single_counter d-flex align-items-center justify-content-center">
-                            <div class="icon">
-                                <i class="flaticon-heart-beat"></i>
-                            </div>
-                            <div class="events">
-                                <h3 class="counter">120</h3>
-                                <p>Finished Event</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single_counter d-flex align-items-center justify-content-center">
-                            <div class="icon">
-                                <i class="flaticon-in-love"></i>
-                            </div>
-                            <div class="events">
-                                <h3 class="counter">120</h3>
-                                <p>Finished Event</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single_counter d-flex align-items-center justify-content-center">
-                            <div class="icon">
-                                <i class="flaticon-hug"></i>
-                            </div>
-                            <div class="events">
-                                <h3 class="counter">120</h3>
-                                <p>Finished Event</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- counter_area_end  -->
 
-    <!-- our_volunteer_area_start  -->
-    <div class="our_volunteer_area section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-55">
-                        <h3><span>Our Volunteer</span></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_volenteer">
-                        <div class="volenteer_thumb">
-                            <img src="img/volenteer/1.png" alt="">
-                        </div>
-                        <div class="voolenteer_info d-flex align-items-end">
-                            <div class="social_links">
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info_inner">
-                                <h4>Sakil khan</h4>
-                                <p>Donner</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_volenteer">
-                        <div class="volenteer_thumb">
-                            <img src="img/volenteer/2.png" alt="">
-                        </div>
-                        <div class="voolenteer_info d-flex align-items-end">
-                            <div class="social_links">
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info_inner">
-                                <h4>Emran Ahmed</h4>
-                                <p>Volunteer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_volenteer">
-                        <div class="volenteer_thumb">
-                            <img src="img/volenteer/3.png" alt="">
-                        </div>
-                        <div class="voolenteer_info d-flex align-items-end">
-                            <div class="social_links">
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info_inner">
-                                <h4>Sabbir Ahmed</h4>
-                                <p>Volunteer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- our_volunteer_area_end  -->
-
-    <!-- news__area_start  -->
-    <div class="news__area section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-55">
-                        <h3><span>News & Updates</span></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="news_active owl-carousel">
-                        <div class="single__blog d-flex align-items-center">
-                            <div class="thum">
-                                <img src="img/news/1.png" alt="">
-                            </div>
-                            <div class="newsinfo">
-                                <span>July 18, 2019</span>
-                                <a href="single-blog.html">
-                                    <h3>Pure Water Is More 
-                                        Essential</h3>
-                                </a>
-                                <p>The passage experienced a 
-                                    surge in popularity during the 
-                                    1960s when used it on their  
-                                    sheets, and again.</p>
-                                <a class="read_more" href="single-blog.html">Read More</a>
-                            </div>
-                        </div>
-                        <div class="single__blog d-flex align-items-center">
-                            <div class="thum">
-                                <img src="img/news/2.png" alt="">
-                            </div>
-                            <div class="newsinfo">
-                                <span>July 18, 2019</span>
-                                <a href="single-blog.html">
-                                    <h3>Pure Water Is More 
-                                        Essential</h3>
-                                </a>
-                                <p>The passage experienced a 
-                                    surge in popularity during the 
-                                    1960s when used it on their  
-                                    sheets, and again.</p>
-                                <a class="read_more" href="single-blog.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- news__area_end  -->
-
-    <div data-scroll-index='1' class="make_donation_area section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-55">
-                        <h3><span>Make a Donation</span></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <form action="#" class="donation_form">
-                        <div class="row align-items-center">
+        <!-- Search Start -->
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
                             <div class="col-md-4">
-                                <div class="single_amount">
-                                    <div class="input_field">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                              <span class="input-group-text" id="basic-addon1">$</span>
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="40,200" aria-label="Username" aria-describedby="basic-addon1">
-                                          </div>
+                                <input type="text" class="form-control border-0" placeholder="Keyword" />
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0">
+                                    <option selected>Category</option>
+                                    <option value="1">Category 1</option>
+                                    <option value="2">Category 2</option>
+                                    <option value="3">Category 3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0">
+                                    <option selected>Location</option>
+                                    <option value="1">Location 1</option>
+                                    <option value="2">Location 2</option>
+                                    <option value="3">Location 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search End -->
+
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h1>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
+                            <h6 class="mb-3">Marketing</h6>
+                            <p class="mb-0">123 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                            <h6 class="mb-3">Customer Service</h6>
+                            <p class="mb-0">123 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                            <h6 class="mb-3">Human Resource</h6>
+                            <p class="mb-0">123 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-tasks text-primary mb-4"></i>
+                            <h6 class="mb-3">Project Management</h6>
+                            <p class="mb-0">123 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-chart-line text-primary mb-4"></i>
+                            <h6 class="mb-3">Business Development</h6>
+                            <p class="mb-0">123 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-hands-helping text-primary mb-4"></i>
+                            <h6 class="mb-3">Sales & Communication</h6>
+                            <p class="mb-0">123 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-book-reader text-primary mb-4"></i>
+                            <h6 class="mb-3">Teaching & Education</h6>
+                            <p class="mb-0">123 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-drafting-compass text-primary mb-4"></i>
+                            <h6 class="mb-3">Design & Creative</h6>
+                            <p class="mb-0">123 Vacancy</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="row g-0 about-bg rounded overflow-hidden">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid w-100" src="img/about-1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid" src="img/about-2.jpg" style="width: 85%; margin-top: 15%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid" src="img/about-3.jpg" style="width: 85%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid w-100" src="img/about-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">We Help To Get The Best Job And Find A Talent</h1>
+                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Tempor erat elitr rebum at clita</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Aliqu diam amet diam et eos</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Clita duo justo magna dolore erat amet</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Jobs Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Job Listing</h1>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <h6 class="mt-n1 mb-0">Featured</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <h6 class="mt-n1 mb-0">Full Time</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <h6 class="mt-n1 mb-0">Part Time</h6>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Software Engineer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
-                                <div class="single_amount">
-                                   <div class="fixed_donat d-flex align-items-center justify-content-between">
-                                       <div class="select_prise">
-                                           <h4>Select Amount:</h4>
-                                       </div>
-                                        <div class="single_doonate"> 
-                                            <input type="radio" id="blns_1" name="radio-group" checked>
-                                            <label for="blns_1">10</label>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Marketing Manager</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
                                         </div>
-                                        <div class="single_doonate"> 
-                                            <input type="radio" id="blns_2" name="radio-group" checked>
-                                            <label for="blns_2">30</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
                                         </div>
-                                        <div class="single_doonate"> 
-                                            <input type="radio" id="Other" name="radio-group" checked>
-                                            <label for="Other">Other</label>
-                                        </div>
-                                   </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Product Designer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Creative Director</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Wordpress Developer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="donate_now_btn text-center">
-                        <a href="#" class="boxed-btn4">Donate Now</a>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Software Engineer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Marketing Manager</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Product Designer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Creative Director</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Wordpress Developer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Software Engineer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Marketing Manager</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Product Designer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Creative Director</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Wordpress Developer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
+        <!-- Jobs End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <h1 class="text-center mb-5">Our Clients Say!!!</h1>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Company</h5>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <!-- footer_start  -->
-    <footer class="footer">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-md-6 col-lg-4 ">
-                        <div class="footer_widget">
-                            <div class="footer_logo">
-                                <a href="#">
-                                    <img src="img/footer_logo.png" alt="">
-                                </a>
-                            </div>
-                            <p class="address_text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore.
-                            </p>
-                            <div class="socail_links">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-twitter-alt"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-dribbble"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-6 col-lg-2">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Services
-                            </h3>
-                            <ul class="links">
-                                <li><a href="#">Donate</a></li>
-                                <li><a href="#">Sponsor</a></li>
-                                <li><a href="#">Fundraise</a></li>
-                                <li><a href="#">Volunteer</a></li>
-                                <li><a href="#">Partner</a></li>
-                                <li><a href="#">Jobs</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 col-lg-3">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Contacts
-                            </h3>
-                            <div class="contacts">
-                                <p>+2(305) 587-3407 <br>
-                                    info@loveuscharity.com <br>
-                                    Flat 20, Reynolds Neck, North
-                                    Helenaville, FV77 8WS
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 col-lg-3">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Top News
-                            </h3>
-                            <ul class="news_links">
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="img/news/news_1.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <a href="#">
-                                            <h4>School for African 
-                                                Childrens</h4>
-                                        </a>
-                                        <span>Jun 12, 2019</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="img/news/news_2.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <a href="#">
-                                            <h4>School for African 
-                                                Childrens</h4>
-                                        </a>
-                                        <span>Jun 12, 2019</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="row">
-                    <div class="bordered_1px "></div>
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer_end  -->
-
-    <!-- link that opens popup -->
-
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/gijgo.min.js"></script>
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-
+    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
